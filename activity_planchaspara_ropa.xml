@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2E4D8">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="254dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/loginButton"
+        android:background="@drawable/edittext_background"
+        android:hint="Buscar..." />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/ic_logo_crearcuenta" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createAccountButton"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="-54dp"
+        android:layout_toStartOf="@id/createAccountButton"
+        android:text="Crear Cuenta"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toStartOf="@id/createAccountButton"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_logo_iniciarsesion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="-58dp"
+        android:layout_toStartOf="@id/loginButton"
+        android:text="Iniciar Sesión"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+
+
+    <!-- Línea vertical entre los botones -->
+
+    <View
+        android:layout_width="48dp"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/loginButton"
+        android:layout_toEndOf="@id/createAccountButton"
+        android:background="#000000" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchEditText"
+        android:layout_marginTop="20dp"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/productsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:text="Planchas para Ropa"
+            android:textColor="#E3F2FD"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+
+    <!-- Tu TextView para el texto -->
+
+    <ImageView
+        android:id="@+id/imageView_plancha1"
+        android:layout_width="139dp"
+        android:layout_height="134dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/ic_plancha1" />
+
+    <TextView
+        android:id="@+id/textoDebajoImagen"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/imageView_plancha1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="-182dp"
+        android:text="Plancha Vertical TEFAL Pro Style Screen,Tiene un potente flujo de vapor (35 gramos por minuto) y una potencia de 1.500 watts.$ 539.900"
+        android:textColor="@android:color/black"
+        android:textSize="8dp" />
+
+    <Button
+        android:id="@+id/btnAgregarAlCarrito"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_plancha1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="0dp"
+        android:text="Añadir al carrito" />
+
+    <!-- ventilador2 -->
+
+    <ImageView
+        android:id="@+id/imageView_plancha2"
+
+        android:layout_width="153dp"
+        android:layout_height="134dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/ic_plancha2" />
+
+    <TextView
+        android:id="@+id/textoDebajoImagen2"
+        android:layout_width="177dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/imageView_plancha2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-180dp"
+        android:layout_marginEnd="10dp"
+        android:text="Plancha de ropa TEFAL Vertical Pro Style One negro,Con cepillo de tela útil accesorio para un suave acabado,Tiene tres posiciones variable sin riesgo, con desinfección.$ 489.900"
+        android:textColor="@android:color/black"
+        android:textSize="8dp" />
+
+    <Button
+        android:id="@+id/btnAgregarAlCarrito2"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_plancha2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="48dp"
+        android:text="Añadir al carrito" />
+
+
+    <!-- ventilador3 -->
+
+    <ImageView
+        android:id="@+id/imageView_plancha3"
+        android:layout_width="139dp"
+        android:layout_height="134dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/ic_plancha3" />
+
+    <!-- ventilador 4 -->
+
+    <TextView
+        android:id="@+id/textoDebajoImagen3"
+        android:layout_width="192dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/imageView_plancha3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-184dp"
+        android:text="Plancha a Vapor TEFAL Ultragliss Plus 1800 Watts,Plancha a Vapor, elimina hasta el 99,99% de virus, gérmenes y bacterias,Cuenta con un sistema antigoteo que previene el posible riesgo de manchar las prendas.$ 289.899"
+
+        android:textColor="@android:color/black"
+        android:textSize="8dp" />
+
+    <Button
+        android:id="@+id/btnAgregarAlCarrito3"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_plancha3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="Añadir al carrito" />
+
+    <ImageView
+        android:id="@+id/imageView_plancha4"
+
+        android:layout_width="153dp"
+        android:layout_height="134dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="29dp"
+        android:src="@drawable/ic_plancha4" />
+
+    <TextView
+        android:id="@+id/textoDebajoImagen4"
+        android:layout_width="183dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/imageView_plancha4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-181dp"
+        android:layout_marginEnd="-9dp"
+        android:text="Plancha de Mano TEFAL Access Steam Force,Capacidad de tanque de agua de 200 ml,No se requiere mesa de planchado y es segura para todo tipo de prendas.$ 269.900
+
+"
+        android:textColor="@android:color/black"
+        android:textSize="8dp" />
+
+    <Button
+        android:id="@+id/btnAgregarAlCarrito4"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_plancha4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="43dp"
+        android:text="Añadir al carrito" />
+
+    <TextView
+        android:id="@+id/serviceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:text="Servicio al cliente"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/whatsappButton"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="640dp"
+        android:background="@drawable/ic_logo_whatsapp"
+        android:contentDescription="Logo de WhatsApp"
+        android:onClick="onWhatsAppButtonClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="613dp"
+        android:layout_marginEnd="147dp"
+        android:layout_toStartOf="@id/loginButton"
+        android:text="Atención al cliente"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/RastreoButton"
+        android:layout_width="38dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="640dp"
+        android:background="@drawable/ic_logo_rastreodecompra"
+        android:contentDescription="Rastreodecompra"
+        android:onClick="onWhatsAppButtonClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="613dp"
+        android:layout_marginEnd="-46dp"
+        android:layout_toStartOf="@id/loginButton"
+        android:text="Rastrea tu pedido"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RastreoButton"
+        android:background="#000000"
+        android:padding="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchEditText"
+        android:layout_marginTop="20dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="690dp"
+        android:text="@ABACOMAX 2023 El confort que mereces, en cada momento que vivimos."
+        android:textColor="#E3F2FD"
+        android:textSize="12dp" />
+
+
+</RelativeLayout>
