@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Nombre del Titular de la Tarjeta -->
+
+    <!-- Número de Tarjeta -->
+
+    <!-- Fecha de Vencimiento -->
+
+    <!-- Código de Seguridad (CVV) -->
+
+    <!-- Botón de Enviar -->
+    <EditText
+        android:id="@+id/editTextCardHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Nombre del Titular de la Tarjeta" />
+
+    <EditText
+        android:id="@+id/editTextCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCardHolderName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Número de Tarjeta" />
+
+    <EditText
+        android:id="@+id/editTextExpirationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCardNumber"
+        android:layout_marginTop="10dp"
+        android:hint="Fecha de Vencimiento (MM/AA)" />
+
+    <EditText
+        android:id="@+id/editTextCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextExpirationDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="CVV" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCVV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:text="Enviar" />
+
+</RelativeLayout>
