@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_logoabanicomax"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Texto ingresar tu numero de telefono -->
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Ingresa con tu número de teléfono"
+        android:textColor="#FF000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="72dp"
+        android:hint="Ingresa con tu numero de telefono"
+        android:textColorHint="#FF000000"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:textColor="#FF000000"
+        android:padding="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="12dp"
+        android:hint="Contraseña"
+        android:textColorHint="#FF000000"
+        android:inputType="textPassword"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:textColor="#FF000000"
+        android:padding="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón "Ingresar" -->
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Ingresar"
+        android:textColor="#FF000000"
+        android:background="#2196F3"
+        android:layout_marginBottom="24dp" />
+
+</RelativeLayout>
