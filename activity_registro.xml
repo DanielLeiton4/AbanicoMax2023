@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_logoabanicomax"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"/>
+
+    <!-- Texto -->
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="REGISTRATE"
+        android:textColor="#FF000000"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPhoneNumber"
+        android:layout_marginTop="32dp"
+        android:hint="Ingrese su Nombre:"
+        android:textColorHint="#FF000000"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:textColor="#FF000000"
+        android:padding="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="10dp"
+        android:hint="Ingrese Su Correo Electrónico:"
+        android:textColorHint="#FF000000"
+        android:inputType="textEmailAddress"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:textColor="#FF000000"
+        android:padding="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp" />
+    <EditText
+        android:id="@+id/editTextphonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Ingrese su numero de telefono :"
+        android:textColorHint="#FF000000"
+        android:inputType="text|number"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:textColor="#FF000000"
+        android:padding="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp" />
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Ingrese Una Contraseña :"
+        android:textColorHint="#FF000000"
+        android:inputType="textPassword"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:textColor="#FF000000"
+        android:padding="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp" />
+
+
+
+    <!-- Botón "Crea tu cuenta" -->
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Crea tu cuenta"
+        android:textColor="#FF000000"
+        android:background="#2196F3"
+        android:layout_marginBottom="24dp" />
+
+</RelativeLayout>
