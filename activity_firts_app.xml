@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <!-- Imagen encima de los botones -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_logoabanicomax"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Botón de inicio de sesión con correo electrónico y contraseña -->
+    <Button
+        android:id="@+id/btn_email_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión con correo y contraseña"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/azul_claro"/>
+
+    <!-- Botón de inicio de sesión con número de teléfono -->
+    <Button
+        android:id="@+id/btn_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión con número de teléfono"
+        android:layout_below="@id/btn_email_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/azul_claro"/>
+
+    <!-- Texto para registrarse -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"/>
+
+    <!-- Botón para registro -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regístrate"
+        android:layout_below="@id/tvRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/azul_claro"/>
+
+    <ImageView
+        android:id="@+id/imageBelowRegister"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_logo_perfil"
+        android:layout_below="@id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageBelowRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/azul_claro"
+        android:text="¿Olvidaste tu contraseña?" />
+
+</RelativeLayout>
