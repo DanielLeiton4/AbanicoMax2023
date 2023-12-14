@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulario de pago con transferencia bancaria"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextNombreBanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del banco"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextNumeroCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de cuenta"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextCodigoIBAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código IBAN"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextSWIFT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código SWIFT/BIC"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextImporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Importe"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextReferencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Referencia"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pagar"
+        android:textSize="18sp" />
+
+</LinearLayout>
